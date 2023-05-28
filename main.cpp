@@ -1,15 +1,13 @@
-void crush(){
-    return 2;
-}
 
-void initVoid(void v){
-    cin >> v;
+void initVoid(void* p, string type){
+    if(type == "int")
+        cin >> (int*)p;
 }
 
 void initP(int* p){
-    cin >> p;
+    cin >> *p;
 }
 
 int main(){
-    cout << "Hello World!"
+    cout << "Hello World!";
 }
